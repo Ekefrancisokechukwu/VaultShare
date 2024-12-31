@@ -3,7 +3,6 @@ import { app } from "./app.js";
 import connectDB from "./config/db.js";
 
 const PORT = process.env.PORT || 5000;
-
 const server = http.createServer(app);
 
 const start = async () => {
@@ -14,7 +13,6 @@ const start = async () => {
     });
   } catch (error) {
     console.error("Error starting server:", error);
-    process.exit(1);
   }
 };
 
